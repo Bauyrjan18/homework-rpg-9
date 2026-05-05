@@ -17,11 +17,6 @@ public class Caretaker {
         return history.pop();
     }
 
-    /**
-     * Returns the most recent snapshot without removing it.
-     *
-     * @return the latest stored snapshot, or null in the scaffold
-     */
     public HeroMemento peek() {
         if (history.isEmpty()) return null;
         return history.peek();
